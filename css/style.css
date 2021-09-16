@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+* {
+    font-family: 'Montserrat', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+@viewport {
+    min-zoom: 100%;
+}
+
+html {
+    height: 100vh;
+}
+
+body {
+    font-family: 'Montserrat', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #643d87;
+    /* background-image: radial-gradient(#0064F7 40%, black 280%); */
+    background-image: radial-gradient(#643d87 40%, black 280%);
+}
+
+#container {
+    min-width: 400px;
+    min-height: 300px;
+    width: 25%;
+    background-color: rgba(255, 255, 255, 0.3);
+    -webkit-border-radius: 0.625em;
+    -moz-border-radius: 0.625em;
+    border-radius: 0.625em;
+    margin: 0 auto;
+    margin-top: 120px;
+    margin-top: 25vh;
+    text-align: center;
+    box-shadow: .5px .5px 10px black;
+}
+
+#container > img {
+    width: initial;
+    height: initial;
+    margin-top: -4em;
+    margin-bottom: 1.25em;
+}
+
+.input_wrapper {
+    position: relative;
+}
+
+input {
+    height: 40px;
+    width: 80%;
+    font-size: 1.25em;
+    margin-top: 0.625em;
+    margin-bottom: 0.625em;
+    background-color: white;
+    padding-left: 2.5em;
+    border: none;
+}
+
+input[type="submit"] {
+    padding: 0;
+}
+
+#email:focus {
+    transition-duration: 0.3s;
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-delay: 0.1s;
+    -webkit-transition-delay: 0.1s;
+    -moz-transition-delay: 0.1s;
+    -o-transition-delay: 0.1s;
+    background-color: lightgray;
+}
+
+#email:not(:focus) {
+    transition-duration: 0.3s;
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-delay: 0.1s;
+    -webkit-transition-delay: 0.1s;
+    -moz-transition-delay: 0.1s;
+    -o-transition-delay: 0.1s;
+    
+}
+
+#email:focus::placeholder {
+    transition-duration: 0.3s;
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-delay: 0.1s;
+    -webkit-transition-delay: 0.1s;
+    -moz-transition-delay: 0.1s;
+    -o-transition-delay: 0.1s;
+    color: white;
+}
+
+#email:not(:focus)::placeholder {
+    transition-duration: 0.3s;
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-delay: 0.1s;
+    -webkit-transition-delay: 0.1s;
+    -moz-transition-delay: 0.1s;
+    -o-transition-delay: 0.1s;
+}
+
+#senha:focus {
+    transition-duration: 0.3s;
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-delay: 0.1s;
+    -webkit-transition-delay: 0.1s;
+    -moz-transition-delay: 0.1s;
+    -o-transition-delay: 0.1s;
+    background-color: lightgray;
+}
+
+#senha:not(:focus) {
+    transition-duration: 0.3s;
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-delay: 0.1s;
+    -webkit-transition-delay: 0.1s;
+    -moz-transition-delay: 0.1s;
+    -o-transition-delay: 0.1s; 
+}
+
+#senha:focus::placeholder {
+    transition-duration: 0.3s;
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-delay: 0.1s;
+    -webkit-transition-delay: 0.1s;
+    -moz-transition-delay: 0.1s;
+    -o-transition-delay: 0.1s;
+    color: white;
+}
+
+#senha:not(:focus)::placeholder {
+    transition-duration: 0.3s;
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-delay: 0.1s;
+    -webkit-transition-delay: 0.1s;
+    -moz-transition-delay: 0.1s;
+    -o-transition-delay: 0.1s;
+}
+
+#img_email {
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    left: 7.73%;
+    /*top: 5.5em;
+    left: 2.5em;*/
+}
+
+#img_senha {
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    left: 7.73%;
+    /*top: 9.75em;
+    left: 2.5em;*/
+}
+
+/*Atrasa o efeito que causa o autofill (altera a cor do background)*/
+
+#email:-webkit-autofill,
+#email:-webkit-autofill:hover,
+#email:-webkit-autofill:focus,
+#email:-webkit-autofill:active {
+    transition: background-color 500000s ease-in-out 0s;
+}
+
+#senha:-webkit-autofill,
+#senha:-webkit-autofill:hover,
+#senha:-webkit-autofill:focus,
+#senha:-webkit-autofill:active {
+    transition: background-color 500000s ease-in-out 0s;
+}
+
+.sub_wrapper {
+    position: relative;
+    width: 90.92%;
+    margin: 0 auto;
+}
+
+#check_wrapper {
+    float: left;
+}
+
+#esqueceu_senha {
+    float: right;
+}
+
+#lembrar {
+    
+    width: initial;
+    height: initial;
+    margin: 0px;
+    padding: 0;
+}
+
+label[for="lembrar"] {
+    cursor: pointer;
+}
+
+label[for="lembrar"]:hover {
+    color: lightgray;
+    transition-duration: 0.2s;
+    -webkit-transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+}
+
+label[for="lembrar"]:not(:hover) {
+    transition-duration: 0.2s;
+    -webkit-transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+}
+
+#esqueceu_senha:any-link {
+    color: inherit;
+    text-decoration: inherit;
+    font: inherit;
+}
+
+#esqueceu_senha:any-link:hover {
+    transition-duration: .2s;
+    color: lightgray;
+}
+
+#esqueceu_senha:any-link:not(:hover) {
+    transition-duration: .2s;
+    -webkit-transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+}
+
+#logar {
+    cursor: pointer;
+    margin-top: 1.5em;
+    color: white;
+    background-color: #f79300;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 0.35em;
+    z-index: 1;
+    background-repeat: repeat-x;
+    height: 2.52em;
+    width: 45%;
+    padding: 0.3125em 1.25em;
+    margin-bottom: 1.5em;
+}
+
+#logar:hover {
+    background-color: darkgray;
+    transition-duration: 0.3s;
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+}
+
+#logar:not(:hover) {
+    transition-duration: 0.3s;
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+}
+
+#logar:active {
+    background-color: #f79300;
+    transition-duration: 0.3s;
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+}
+
+.clear {
+    clear:both;
+}
