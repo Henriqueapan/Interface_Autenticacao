@@ -15,7 +15,6 @@ html {
 body {
     font-family: 'Montserrat', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #643d87;
-    /* background-image: radial-gradient(#0064F7 40%, black 280%); */
     background-image: radial-gradient(#643d87 40%, black 280%);
 }
 
