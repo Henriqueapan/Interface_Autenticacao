@@ -205,7 +205,7 @@ input[type="submit"] {
 }
 
 #lembrar {
-    
+    accent-color: lightgray;
     width: initial;
     height: initial;
     margin: 0px;
